@@ -1,1 +1,6 @@
 <h2> Список наших маляров </h2>
+<% @painter.each do |painter|%>
+  <p>
+    <%= painter.name%>
+  </p>
+<%end%>
