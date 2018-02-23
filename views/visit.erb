@@ -8,32 +8,29 @@
   });
 </script>
 
-
-
-
 <form action = "/visit" method="POST" class="form-inline">
   <div class="form-group">
     <label for="exampleInputName2"> Name </label>
     <input  name = "user_name" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe" value ="<%= @user_name %>">
   </div>
+  <p>
   <div class="form-group">
-    <label for="exampleInputEmail2"> Email </label>
-    <input name = "email" type="text" class="form-control "  id="exampleInputEmail2" placeholder="jane.doe@example.com"> 
+    <label for="exampleInputEmail2"> Phone </label>
+    <input name = "phone" type="text" class="form-control "  id="exampleInputEmail2" >
   </div>
-
+</p>
+<p>
   <div class="form-group">
     <label for="exampleInputEmail2"> Data </label>
     <input   id="datetimepicker1" name = "data" type="text" class="form-control " >
   </div>
-
+</p>
+<p>
   <div class="form-group">
-    <label for="exampleInputEmail2"> Парикмахеры </label>
-      <select name = "barber"  class="form-control">
-      <option <%= @barber == 'Walter'? 'selected': ''%>> Walter White</option>
-      <option <%= @barber == 'Jessy Pinkman'? 'selected': ''%>> Jessy Pinkman</option>
-      <option <%= @barber == 'Gus Fring'? 'selected': ''%>> Gus Fring</option>
-    </select>
+    <label for="exampleInputEmail2"> Auto </label>
+    <input name = "auto" type="text" class="form-control "  id="exampleInputEmail2" >
   </div>
+</p>
   <div class="form-group" >
     <label for="exampleInputEmail2"> Выберите цвет покраски </label>
     <select id="color" name = "color">
