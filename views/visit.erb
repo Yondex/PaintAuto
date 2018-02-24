@@ -11,30 +11,30 @@
 <form action = "/visit" method="POST" class="form-inline">
   <div class="form-group">
     <label for="exampleInputName2"> Name </label>
-    <input  name = "user_name" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe" value ="<%= @user_name %>">
+    <input  name = "client[name]" type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe" value ="<%= @user_name %>">
   </div>
   <p>
   <div class="form-group">
     <label for="exampleInputEmail2"> Phone </label>
-    <input name = "phone" type="text" class="form-control "  id="exampleInputEmail2" >
+    <input name = "client[phone]" type="text" class="form-control "  id="exampleInputEmail2" >
   </div>
 </p>
-<br />
+
 <p>
   <div class="form-group">
     <label for="exampleInputEmail2"> Data </label>
-    <input   id="datetimepicker1" name = "data" type="text" class="form-control " >
+    <input   id="datetimepicker1" name = "client[datestamp]" type="text" class="form-control " >
   </div>
 </p>
 <p>
   <div class="form-group">
     <label for="exampleInputEmail2"> Auto </label>
-    <input name = "auto" type="text" class="form-control "  id="exampleInputEmail2" >
+    <input name = "client[auto]" type="text" class="form-control "  id="exampleInputEmail2" >
   </div>
 </p>
   <div class="form-group" >
     <label for="exampleInputEmail2"> Выберите цвет покраски </label>
-    <select id="color" name = "color">
+    <select id="color" name = "client[color]">
       <option value="#7bd148">Green</option>
       <option value="#5484ed">Bold blue</option>
       <option value="#a4bdfc">Blue</option>
