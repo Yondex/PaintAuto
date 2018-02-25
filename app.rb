@@ -7,7 +7,11 @@ require 'sinatra/activerecord'
 set :database, "sqlite3:PaintAuto.db"
 
 class Client < ActiveRecord::Base
-
+      validates :name, presence: true, length: { minimum: 4, maximum: 20 }
+      validates :phone, presence: true
+      validates :datestamp, presence: true
+      validates :auto, presence: true, length: { minimum: 2, maximum: 20 }
+      validates :color, presence: true
 end
 
 class Painter < ActiveRecord::Base
@@ -28,6 +32,10 @@ end
 
 post '/visit' do
  c = Client.new params[:client]
-c.save
+  if c.save
     erb "<h2> Спасибо, Вы записались!</h2> "
+  else
+  @error = c.errors.full_messages.first
+  erb :visit
+  end
 end
