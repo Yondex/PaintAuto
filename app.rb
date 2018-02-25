@@ -39,3 +39,7 @@ post '/visit' do
   erb :visit
   end
 end
+get '/painter/:id' do
+  @painter = Painter.find(params[:id])
+  erb :painter
+end
