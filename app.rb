@@ -44,7 +44,7 @@ get '/painter/:id' do
   erb :painter
 end
 get '/bookings' do
-  @clients = Client.all
+  @clients = Client.order('created_at DESC')
   erb :bookings
 end
 
