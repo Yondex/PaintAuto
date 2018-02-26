@@ -47,3 +47,7 @@ get '/bookings' do
   @clients = Client.all
   erb :bookings
 end
+
+get '/contacts' do
+  erb :contacts
+end
