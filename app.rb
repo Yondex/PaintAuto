@@ -43,3 +43,7 @@ get '/painter/:id' do
   @painter = Painter.find(params[:id])
   erb :painter
 end
+get '/bookings' do
+  @clients = Client.all
+  erb :bookings
+end
