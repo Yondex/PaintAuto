@@ -54,3 +54,6 @@ end
 get '/about' do
   erb :about
 end
+get '/client/:id' do
+  @client = Client.find(params[:id])
+end
