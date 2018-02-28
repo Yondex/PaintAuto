@@ -1,4 +1,3 @@
-sinatra-bootstrap-clean
-=======================
-
-Cleaned version of https://github.com/bootstrap-ruby/sinatra-bootstrap
+# Painting auto
+На этом сайте можете заказать покрас своего автомобиля.
+Мы ждем Вас
