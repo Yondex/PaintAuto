@@ -1,13 +1,10 @@
-<h2> Записаться</h2>
-
-
+<h2>Записаться</h2>
 <script type = "text/javascript">
   $(function(){
     $('#color').simplecolorpicker();
     $('#datetimepicker1').datetimepicker();
   });
 </script>
-
 <form action = "/visit" method="POST" class="form-inline">
   <div class="form-group">
     <label for="exampleInputName2"> Name </label>
@@ -19,7 +16,6 @@
     <input name = "client[phone]" type="text" class="form-control "  id="exampleInputEmail2" >
   </div>
 </p>
-
 <p>
   <div class="form-group">
     <label for="exampleInputEmail2"> Data </label>
@@ -48,8 +44,6 @@
       <option value="#dbadff">Purple</option>
       <option value="#e1e1e1">Gray</option>
     </select>
-
   </div>
-
   <button type="submit" class="btn btn-primary">Send</button>
 </form>
